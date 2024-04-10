@@ -5,8 +5,8 @@ services:
   env: docker
   autoDeploy: false
   disk:
-    name: mysql
-    mountPath: /var/lib/mysql
+    name: mysql-data
+    mountPath: /var/data
     sizeGB: 1
   envVars:
   - fromGroup: mysql
