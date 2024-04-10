@@ -7,7 +7,7 @@ services:
   disk:
     name: mysql
     mountPath: /var/lib/mysql
-    sizeGB: 10
+    sizeGB: 1
   envVars:
   - fromGroup: mysql
 
@@ -15,9 +15,9 @@ envVarGroups:
 - name: mysql
   envVars:
   - key: MYSQL_DATABASE
-    value: mysql
+    value: luberlu_mysql
   - key: MYSQL_USER
-    value: mysql
+    value: luberlu_mysql
   - key: MYSQL_PASSWORD
     generateValue: true
   - key: MYSQL_ROOT_PASSWORD
