@@ -6,7 +6,7 @@ services:
   autoDeploy: false
   disk:
     name: mysql-data
-    mountPath: /var/data
+    mountPath: /var/lib/mysql
     sizeGB: 1
   envVars:
   - fromGroup: mysql
